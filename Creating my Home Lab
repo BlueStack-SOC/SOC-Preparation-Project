@@ -1,0 +1,43 @@
+# SOC Analyst Learning Journey – Homelab Project
+
+Hello, and welcome to the start of my SOC learning journey.
+
+To give you a quick overview of what I’m currently bringing to the table:
+
+- Basic Linux commands and OS installation
+- Familiarity with core cybersecurity concepts (CIA Triad, networking fundamentals, account security)
+- Limited experience using Cisco Packet Tracer
+- Introductory pentesting exposure via Hack The Box
+- Foundational theoretical knowledge across multiple cyber domains
+
+As you can see, my experience so far is broad but not yet deep. I’ve spent a lot of time learning theory, but now it’s time to apply that knowledge through practice and real-world simulation.
+
+To begin, I’ll be building a basic homelab using Oracle VirtualBox. The goal is to simulate common attacks, capture and analyze network traffic, and document my findings — all to build the practical skills needed for a SOC role.
+
+---
+
+### Tools & Platforms I’ll Be Using:
+- VirtualBox
+- ParrotOS (Not Kali, just preference.)
+- Windows 10
+- Wireshark, TCPDump, Nmap
+- (Eventually) Suricata or Security Onion
+
+---
+
+### Learning Resources:
+- PracticalNetworking.net
+- OWASP Top 10
+- **Shoutout** to [MyDFIR’s video](https://www.youtube.com/watch?v=kku0fVfksrk) for helping guide this process.
+
+---
+
+This repo will serve as a log of my progress, lab setups, attack simulations, and write-ups.
+
+Let's get to creating this home lab.
+
+### Creating the home lab:
+The first things I did were;
+- Launch Oracle VirtualBox (Already installed from previous projects)
+- Download ParrotOS
+- Download Windows Media Creator (For the Windows 10 ISO)
