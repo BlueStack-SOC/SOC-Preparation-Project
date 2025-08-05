@@ -1,0 +1,230 @@
+Hello, future Hiring Managers. It's me, BlueStack, and if you're looking at this you probably already know who I am and which certs I have.
+
+But for everybody else, this is intended to serve as a guide on how I'm learning SOC analysis using online resources, AI and my own learning.
+
+So before I put my roadmap below, I want to explain what I'm planning to achieve with this project and why I'm doing what I'm doing instead of spending money on certifications.
+
+
+====IF YOU DO NOT CARE, SKIP TO LINE 40 WHERE THE ROADMAP BEGINS.====
+
+In the modern cybersecurity landscape, one thing has become clear: jobs are hard to come by. But people often misattribute why that is.
+
+According to my research, the main reason cybersecurity roles go unfilled isn't simply due to a lack of certifications. Sure, you might have a bachelor’s degree in computer science and a few certs like Security+ or CySA+, but that alone won’t get you hired.
+
+Certifications might get you flagged for further review, but one crucial thing many beginners (myself included) often overlook is the hands-on skills. You can go to university, pay tens of thousands of dollars, learn all the theory and still find yourself without a job. 
+That’s because, while studying, you likely didn’t have time to do home lab projects or learn the actual tools used in roles like SOC Analyst.
+
+So, as a student, I’ve decided to veer off the traditional path a bit. Rather than focusing solely on certs or formal education, I’m pursuing a hands-on approach centered around building valuable, demonstrable skills before I land my first role.
+
+Now, don’t get me wrong - getting an entry-level job in cybersecurity is still difficult, even with experience. And you’re probably not going to be earning six figures right away. Unless you go into government or defense, the chances of getting swept off the street
+into a high-paying SOC job are exceptionally low.
+
+But that’s not what this project is about.
+
+This is a slow, methodical process to build the skills needed to get a foot in the door. I will consider this project “complete” if the following conditions are met:
+
+-I am offered a job at a legitimate vendor (So no Telegram job scams)
+-I have completed all of the items I have set myself on the roadmap
+-I apply using the GitHub repositories on this project as proof of my competence
+
+Now obviously, in cybersecurity, learning never concludes. You can never have experience in everything, and the best in cybersecurity acknowledge the fact that this field is impossible to completely master. Every day, new CVEs are being discovered, and with the advent of AI
+attacks are becoming more commonplace and sophisticated. 
+
+It is now possible for a complete beginner to create their own malware using clever prompting or jailbroken AI agents. There is no doubt that this new and emerging technology will cause a significant spike in Ibuprofen sales with cybersecurity professionals worldwide. This is one
+aspect I plan to integrate into my roadmap, and while I don't have access to sophisticated AI agents that can serve as a threat actor in something like a home lab exercise, I will try to get as close as possible to what such an attack could look like.
+
+After all, defending against AI-driven attacks will become more and more relevant to SOC work as time goes on, especially at smaller companies that may not have the resources to defend against such a rapid and sophisticated attack like larger organizations do.
+
+Now with the pretext out of the way, let me demonstrate the roadmap I will follow.
+
+====THE ROADMAP====
+
+1. Foundations of Cybersecurity & Networking
+To build a solid baseline before diving into tools and workflows, I’m starting with networking, protocols, and the basics of cyber threats.
+
+Learning Resources:
+Google Cybersecurity Professional Certificate (Coursera)
+Professor Messer’s Security+ videos
+Practical Networking (practicalnetworking.net)
+
+OWASP Top 10
+
+Tools I'll Use:
+Wireshark
+Nmap
+VirtualBox or VMware
+TCPDump
+
+Project:
+Analyze PCAP files and generate reports identifying suspicious traffic
+Build a virtual lab with Windows and Linux machines and capture baseline and attack traffic
+Document network attacks like ARP spoofing or DNS poisoning using Wireshark
+
+2. SIEM (Security Information & Event Management)
+Understanding how to collect, aggregate, and analyze logs is key to any SOC role. I’ll be focusing on tools like Splunk and the ELK stack.
+
+Learning Resources:
+Splunk Fundamentals 1 (Free course)
+Elastic Security documentation
+Graylog tutorials
+CyberDefenders SIEM labs
+
+Tools I'll Use:
+Splunk Free
+ELK Stack (Elasticsearch, Logstash, Kibana)
+Sysmon (for generating logs)
+Winlogbeat
+
+Project:
+Build a basic SIEM lab using VMs and feed in Windows and Linux logs
+Write detection rules for common attacks (e.g., failed logins, port scanning, privilege escalation)
+Create dashboards and a writeup explaining each detection rule I implemented
+
+3. Endpoint Detection & Incident Response (EDR/IR)
+SOC work often starts at the endpoint. I’m learning how to collect forensic artifacts and respond to suspicious activity on workstations.
+
+Learning Resources:
+The DFIR Report (case studies)
+Malware Traffic Analysis
+CyberDefenders Blue Primer
+Velociraptor documentation
+
+Tools I'll Use:
+Velociraptor
+KAPE
+Sysinternals Suite
+Autopsy
+
+Project:
+Simulate malware execution in a Windows VM
+Collect memory and disk artifacts and analyze them
+Write an incident response timeline and create visualizations of the attack path
+
+4. Log Analysis & Threat Hunting
+I'll be using real logs, SIGMA rules, and frameworks like MITRE ATT&CK to proactively identify suspicious activity.
+
+Learning Resources:
+MITRE ATT&CK Framework
+SANS Blue Team cheat sheets
+Huntress Labs blog
+
+Tools I'll Use:
+Sigma
+MITRE ATT&CK Navigator
+Kibana/Elastic SIEM
+Event Viewer
+
+Project:
+Use logs from my lab to create threat hunting queries
+Build and apply Sigma rules to detect common MITRE techniques
+Document the hunt: hypothesis, queries, findings, false positives
+
+5. Active Directory (AD) Security
+Most organizations use AD — and many attacks start or escalate there. I’ll be practicing both offense and defense in AD environments.
+
+Learning Resources:
+TryHackMe Active Directory rooms
+HackTheBox Tier 0/1 machines
+DetectionLab GitHub project
+
+ADSecurity.org
+
+Tools I'll Use:
+BloodHound
+SharpHound
+PowerView
+Windows Server
+
+Project:
+Set up a small AD lab with Windows Server and clients
+Simulate enumeration and privilege escalation (e.g., kerberoasting, DC sync)
+Write detection and response procedures based on observed behavior
+
+6. Phishing & Email Analysis
+Email remains the most common entry point for attackers. I’ll be learning how to dissect and analyze malicious emails and attachments.
+
+Learning Resources:
+Cofense Intelligence blog
+PhishingKit Tracker (GitHub)
+Cisco guide to email headers
+AnyRun malware analysis
+
+Tools I'll Use:
+Thunderbird
+VirusTotal
+AnyRun
+INetSim
+
+Project:
+Analyze a real phishing email (redacted) and break down the attack chain
+Extract indicators of compromise (IOCs) and document them
+Create a fake phishing email scenario and explain how I’d detect and respond
+
+7. Cloud Security Monitoring
+SOC roles are moving into the cloud. I’ll be learning to detect, triage, and respond to threats in environments like Azure and AWS.
+
+Learning Resources:
+Microsoft Learn: SC-200
+AWS CloudTrail docs
+Sentinel Labs examples
+Google’s Cloud Security Podcast
+
+Tools I'll Use:
+Azure Sentinel (free trial)
+AWS CloudTrail and GuardDuty
+GCP Security Command Center
+Terraform (for setup)
+
+Project:
+Set up a cloud logging system on free-tier accounts
+Simulate a suspicious login or privilege escalation and capture the alert
+Create a report showing how I’d investigate the alert as a junior SOC analyst
+
+8. AI-Generated Threats & Emerging Tech
+AI-generated malware and phishing are real threats. I want to explore how these tools work so I can better understand how to detect and defend against them.
+
+Learning Resources:
+The DFIR Report (AI-focused entries)
+GPT jailbreak repositories (ethical review only)
+Papers With Code (AI malware generation)
+DarkReading / Recorded Future blogs
+
+Tools I'll Use:
+ChatGPT (jailbreak prompt testing in sandbox)
+Suricata / Maltrail
+Local LLMs (offline prompt testing)
+
+Project:
+Simulate an “AI-generated” phishing or malware behavior using known prompt methods
+Document the attack chain, analyze network traffic, and build a detection rule
+Write a case study: “Defending a small company from an AI-generated malware threat”
+
+9. Report Writing & Communication
+This is one of the most underrated but critical SOC skills. If I can’t explain what I’ve found, the work is wasted.
+
+Learning Resources:
+The DFIR Report (for example formats)
+Cybersecurity Style Guide (by NSA)
+Grammarly or Hemingway (for clarity)
+
+Tools I'll Use:
+Markdown
+Mermaid.js or Graphviz
+Obsidian or Docs
+
+Project:
+Create a standardized incident response report template
+Document one of my earlier lab attacks in professional report format
+Include diagrams (attack chain, timeline, etc.) using Mermaid in GitHub
+
+====SOC Analyst Project Checklist====
+
+[ ]Build and document a full SIEM lab (Splunk or ELK)
+[ ]Complete at least 3 CyberDefenders blue team challenges
+[ ]Simulate and document one malware infection (with logs and IR steps)
+[ ]Create detection rules for AD enumeration and privilege escalation
+[ ]Write a phishing analysis report with IOCs and response steps
+[ ]Set up a cloud logging environment and analyze one alert
+[ ]Simulate an AI-generated phishing or malware behavior
+[ ]Create at least two full incident reports with visuals
+[ ]Maintain and update this roadmap as I progress
